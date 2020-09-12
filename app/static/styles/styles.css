@@ -352,6 +352,21 @@ main#recording-space {
   margin-left: 2rem;
 }
 
+.search {
+  background-color: powderblue;
+}
+
+/* Style the search box inside the navigation bar */
+.search input[type=text] {
+  position: absolute;
+  width: 800px;
+  height: 40px;
+  left: 425px;
+  top: 175px;
+  background: #FFFFFF;
+  border-radius: 50px;
+}
+
 .card {
   background: #c7ecee;
   height: 150px;
