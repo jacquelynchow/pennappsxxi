@@ -84,6 +84,71 @@ main {
   border: 0;
   background: rgb(224,39,157);
   background: linear-gradient(180deg, rgba(224,39,157,1) 0%, rgba(187,107,217,1) 100%);
-  
 
+
+}
+
+/* recording page styles below **********************************************/
+@keyframes bg-pulse {
+  0% {
+    background-color: #17a2b8;
+  }
+
+  50% {
+    background-color: #c7ecee;
+  }
+
+  100% {
+    backgrouond-color: #17a2b8;
+  }
+}
+
+.recording {
+  animation: bg-pulse 1s alternate ease-in-out infinite;
+}
+
+#result {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  margin-right: 5rem;
+}
+#result .final {
+  color: #0d122b;
+  font-style: normal;
+}
+
+main#recording-space {
+  flex-grow: 2;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 2em;
+  padding-top: 4em;
+  text-align: center;
+  width: 50%;
+  height: 10rem;
+  margin: 0 auto;
+}
+
+#mic {
+  /* background: transparent; */
+  border-radius: 50%;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  margin-bottom: 4em;
+  width: 5rem;
+  height: 5rem;
+  font-size: 30px;
+}
+
+#mic:hover,
+#mic:focus {
+  background: #c7ecee;
+}
+
+.save-entry {
+  margin: 0 auto;
 }
