@@ -374,5 +374,9 @@ main#recording-space {
   background: #4B0D7A;
   height: 150px;
   width: 150px;
+  color: white;
+}
 
+.card-footer {
+  background: #4B0D7A;
 }
