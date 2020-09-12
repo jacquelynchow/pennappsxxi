@@ -48,6 +48,10 @@ nav {
   background-color: #00000059;
   margin: 0.5em 0.8em;
   border-radius: 1em;
+  background: rgba(196, 196, 196, 0.12);
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -5px 5px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 .sidebar-button > .fa {
   display: block;
@@ -357,31 +361,75 @@ main#recording-space {
   margin: 5rem;
 }
 
+.record-button {
+  height: 5rem;
+  width: 5rem;
+  margin-bottom: 10rem;
+  margin-left: 2rem;
+}
+
+
+/* entries page styles */
+#entriescontent {
+  background: #300037;
+  margin: 10vh 1vh;
+  height: 70vh;
+  border-radius: 1em;
+  overflow: auto;
+}
+
 .search {
   position: absolute;
-  top: 200px;
-  left: 150px;
-  background-color: #4B0D7A;
+  top: 125px;
+  left: 280px;
   border-radius: 50px;
 }
 
 /* Style the search box inside the navigation bar */
 .search input[type=text] {
-  width: 800px;
+  width: 1000px;
   height: 40px;
   left: 425px;
   top: 175px;
   background: #FFFFFF;
   border-radius: 50px;
+  padding-left: 15px;
 }
 
 .card {
-  background: #4B0D7A;
-  height: 150px;
-  width: 150px;
+  background-color: #4B0D7A;
+  height: 200px;
+  width: 300px;
   color: white;
+  border-radius: 15px;
+  left: 30px;
+  padding-left: 30px;
+  padding-bottom: 15px;
 }
 
 .card-footer {
+  position: absolute;
   background: #4B0D7A;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 600;
+  bottom: 10px;
+  right: 10px;
+}
+
+.card-title {
+  text-align: left;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 20px;
+}
+
+.card-text {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.bookmark {
+  position: absolute;
+  left: 250px;
 }
