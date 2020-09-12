@@ -7,10 +7,10 @@
 {% block body %}
   <main>
     <div id="sidebar">
-        <div class="sidebar-button"><i class="fa fa-microphone"></i></div>
-        <div class="sidebar-button"><i class="fa fa-book"></i></div>
-        <div class="sidebar-button"></div>
-    </div>
+        <div class="sidebar-button"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='record.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
+        <div class="sidebar-button"><a href="{{ url_for('entries') }}"><img src="{{ url_for('static', filename='entries.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
+        <div class="sidebar-button"><a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='logout.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
+  </div>
     <div id="entriescontent">
 
         <div class="search">
