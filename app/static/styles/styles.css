@@ -351,34 +351,3 @@ main#recording-space {
   margin-bottom: 10rem;
   margin-left: 2rem;
 }
-
-.search {
-  position: absolute;
-  top: 125px;
-  left: 300px;
-  background-color: #4B0D7A;
-  border-radius: 50px;
-}
-
-/* Style the search box inside the navigation bar */
-.search input[type=text] {
-  width: 600px;
-  height: 40px;
-  left: 425px;
-  top: 175px;
-  background: #FFFFFF;
-  border-radius: 50px;
-}
-
-.card {
-  top: 75px;
-  background-color: #4B0D7A;
-  height: 150px;
-  width: 150px;
-  color: white;
-  border-radius: 15px;
-}
-
-.card-footer {
-  background: #4B0D7A;
-}
