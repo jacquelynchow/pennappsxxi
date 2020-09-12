@@ -2,3 +2,42 @@ h1, h2 {
   text-align: center;
   margin-top: 5rem;
 }
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #525f7f;
+  text-align: left;
+  background-color: #1e1e2f;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(34, 42, 66, 0);
+}
+nav {
+  background: transparent;
+  height: 10vh;
+  margin: 0.5vh;
+}
+#sidebar, #content {
+  background: rgb(224,39,157);
+  background: linear-gradient(180deg, rgba(224,39,157,1) 0%, rgba(187,107,217,1) 100%);
+  margin: 0.5vh;
+  height: 80vh;
+  border-radius: 1em;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  max-height: 80vh;
+}
+#content {
+  background: #33005A;
+  
+}
