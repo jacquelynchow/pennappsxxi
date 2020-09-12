@@ -1,24 +1,48 @@
 {% extends 'layout.html' %}
 
+{% block heading %}
+  <header class="container-fluid">
+    <a href="{{ url_for('index') }}">
+      <h1>
+        Nite Write
+      </h1>
+    </a>
+  </header>
+{% endblock %}
+
 {% block body %}
-    <main>
-        <div id="sidebar">
-        <div class="sidebar-button"><i class="fa fa-microphone"></i></div>
-        <div class="sidebar-button"><i class="fa fa-book"></i></div>
-        <div class="sidebar-button"></div>
-        </div>
-        <div id="content" class="home">
-        <h2 class="home-date">Today is <strong>09/12/2020</strong></h2>
-        <p class="home-questions">Questions to think about: <span>What are you worried about?</span></p>
-        <h3 class="home-add-title">Add title here...</h3>
+  <main>
+  <div id="sidebar">
+    <div class="sidebar-button"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='record.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
+    <div class="sidebar-button"><a href="{{ url_for('entries') }}"><img src="{{ url_for('static', filename='entries.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
+    <div class="sidebar-button"><a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='logout.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
+  </div>
+  <div id="content" class="home">
+    <h2 class="home-date">Entry Date: {{ date }}</h2>
+    <div class="bottom" style="margin-top: 30px;">
         <div class="home-form-container">
-            <form class="home-form">
-            <textarea class="home-speech-area">The cat was playing in the garden.</textarea>
-            <br>
-            <input type="submit" class="save-entry-btn">
-            </form>
+            <h3 style="text-align: center; margin-left: -30px; margin-right: 60px; margin-bottom: 20px; font-weight: bold;">{{ title }}</h3>
         </div>
-        <div><i class="fa fa-microphone"></i></div>
+        <div class="record-button" style="margin-left: 300px;">
+            <button id="mic" class="btn btn-info btn-md">
+            <i class="fa fa-microphone"></i>
+            </button>
         </div>
-  </main>
+        <form method="POST">
+            <textarea name="entry" id="entry-area" class="home-textarea">{{ entry_details }}</textarea>
+            <div class="save-btn-container">
+            <a href="{{url_for('saveData')}}">
+                <button type="submit" class="save-btn">Save Entry</button>
+            </a>
+            </div>
+        </form>
+        <div id="result" style="margin-left: 40px; color: white;"></div>
+    </div>
+    <!-- if not using chrome -->
+    <p id="message" hidden aria-hidden="true" style="margin-top: 30px;">
+      Your browser doesn't support Speech Recognition. Sorry.
+    </p>
+
+  </div>
+</main>
 {% endblock %}

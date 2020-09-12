@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 h1 {
   color: white;
 }
@@ -245,19 +248,21 @@ input:focus {
   padding: 0 10%;
 }
 .home-add-title {
-  margin-top: 10%;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   border: none;
   background-color: transparent;
   color: white;
-  margin-left: 0px;
+  margin-left: -70px;
+  padding-right: 70px;
+  margin-bottom: 0px
 }
 textarea.home-textarea {
   border-radius: 1em;
-  width: 100%;
+  width: 90%;
 	height: 25vh;
 	border: 0;
   padding: 1em;
+  margin-left: 5%;
 }
 button.save-btn {
   border: 0;
@@ -274,7 +279,6 @@ button.save-btn {
 div.save-btn-container {
   text-align: center;
 }
-
 /* recording page styles below **********************************************/
 @keyframes bg-pulse {
   0% {
@@ -303,7 +307,7 @@ div.save-btn-container {
   margin-top: 2rem;
 }
 #result .final {
-  color: #0d122b;
+  color: white;
   font-style: normal;
 }
 
@@ -320,18 +324,25 @@ main#recording-space {
   height: 10rem;
   margin: 0 auto;
 }
-
 #mic {
   /* background: transparent; */
   border-radius: 50%;
   transition: all 0.2s ease 0s;
   cursor: pointer;
-  margin-bottom: 4em;
   width: 5rem;
   height: 5rem;
   font-size: 30px;
 }
-
+.bottom > div {
+  display: inline-block;
+}
+.record-button {
+  position: absolute;
+  float: right;
+  left: 200;
+  margin-top: 0px;
+  margin-left: 30px;
+}
 #mic:hover,
 #mic:focus {
   background: #c7ecee;
@@ -342,22 +353,8 @@ main#recording-space {
   margin-left: -7rem;
 }
 
-#entry-area {
-  height: 10rem;
-  width: 30rem;
-  margin-top: -5rem;
-  margin-right: 5rem;
-}
-
 #example {
   margin: 5rem;
-}
-
-.record-button {
-  height: 5rem;
-  width: 5rem;
-  margin-bottom: 10rem;
-  margin-left: 2rem;
 }
 
 .search {
@@ -384,6 +381,7 @@ main#recording-space {
   width: 150px;
   color: white;
 }
+
 .card-footer {
   background: #4B0D7A;
 }
