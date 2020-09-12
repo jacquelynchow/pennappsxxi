@@ -369,19 +369,19 @@ main#recording-space {
 }
 
 
-/* entries page styles */
+/*------------- entries page styles -------------*/
 #entriescontent {
   background: #300037;
-  margin: 10vh 1vh;
-  height: 70vh;
+  margin: 7vh 1vh;
+  height: 73vh;
   border-radius: 1em;
   overflow: auto;
 }
 
 .search {
   position: absolute;
-  top: 125px;
-  left: 280px;
+  top: 110px;
+  left: 400px;
   border-radius: 50px;
 }
 
@@ -399,12 +399,13 @@ main#recording-space {
 .card {
   background-color: #4B0D7A;
   height: 200px;
-  width: 300px;
+  width: 320px;
   color: white;
   border-radius: 15px;
-  left: 30px;
+  left: 60px;
   padding-left: 30px;
   padding-bottom: 15px;
+  margin-right: 40px;
 }
 
 .card-footer {
