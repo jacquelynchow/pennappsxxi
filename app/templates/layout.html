@@ -9,9 +9,7 @@
       <!--custom stylesheet-->
       <link rel="stylesheet" href="{{ url_for('static', filename='/styles/styles.css') }}">
       <!--google font-->
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet">
-      
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">      
       <!--icons-->
       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <!-- Favicon -->
@@ -20,12 +18,15 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script type="text/javascript" src="{{ url_for('static', filename='/js/script.js', version='2') }}"></script>
 
-      <title>Voice Diary</title>
+      <title>Nite Write</title>
       <header class="container-fluid">
         <a href="{{ url_for('index') }}">
-          <h1>
-            Voice Diary App
-          </h1>
+          <!-- Logo for Nite Write -->
+          <svg width="563" height="106" viewBox="0 0 563 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M257 43H244C242.794 43 241 43.799 241 46V60C241 62.201 242.794 63 244 63H259V61H244.012C243.55 60.988 243 60.806 243 60C243 59.899 243.009 59.809 243.024 59.727C243.136 59.151 243.608 59.01 244.012 59H259V45C259 44.4696 258.789 43.9609 258.414 43.5858C258.039 43.2107 257.53 43 257 43ZM257 52L255 51L253 52V45H257V52Z" fill="white"/>
+            <path d="M58.7762 41.95V71H55.2762V35.5H58.1762L81.4762 65.1V35.55H84.9762V71H81.7262L58.7762 41.95ZM113.899 71V35.5H117.399V71H113.899ZM171.502 38.6H158.852V71H155.352V38.6H142.702V35.5H171.502V38.6ZM220.669 67.9V71H196.819V35.5H220.219V38.6H200.319V51.4H217.669V54.35H200.319V67.9H220.669ZM291.624 35.75H294.924L299.924 48.35L304.974 35.75H308.324L302.124 50.9L308.924 66.95L321.774 35.5H325.574L310.524 71H307.424L299.974 53.45L292.474 71H289.424L274.424 35.5H278.174L291.074 66.95L297.824 50.9L291.624 35.75ZM350.569 71V35.5H365.569C367.102 35.5 368.502 35.8167 369.769 36.45C371.069 37.0833 372.186 37.95 373.119 39.05C374.052 40.1167 374.769 41.3167 375.269 42.65C375.802 43.95 376.069 45.2833 376.069 46.65C376.069 48.3833 375.736 50 375.069 51.5C374.436 53 373.519 54.2667 372.319 55.3C371.119 56.3333 369.736 57 368.169 57.3L376.869 71H372.919L364.569 57.9H354.069V71H350.569ZM354.069 54.8H365.669C367.069 54.8 368.286 54.4167 369.319 53.65C370.352 52.85 371.152 51.8333 371.719 50.6C372.286 49.3667 372.569 48.05 372.569 46.65C372.569 45.2167 372.236 43.9 371.569 42.7C370.936 41.4667 370.069 40.4833 368.969 39.75C367.869 38.9833 366.669 38.6 365.369 38.6H354.069V54.8ZM403.235 71V35.5H406.735V71H403.235ZM460.838 38.6H448.188V71H444.688V38.6H432.038V35.5H460.838V38.6ZM510.005 67.9V71H486.155V35.5H509.555V38.6H489.655V51.4H507.005V54.35H489.655V67.9H510.005Z" fill="white"/>
+          </svg> 
+            
         </a>
       </header>
     </head>

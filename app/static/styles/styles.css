@@ -6,13 +6,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
   color: #525f7f;
   text-align: left;
-  background-color: #1e1e2f;
+  background-color: #300037;
 }
 html {
   font-family: sans-serif;
@@ -40,4 +40,154 @@ main {
 #content {
   background: #33005A;
   
+}
+.loginpage {
+  width: 800px; /* define a width to the header container */
+  position: relative; /* see note */
+  margin: 0 auto; /* centers header horizontally */
+}
+.loginblock {
+  position: absolute;
+  width: 570px;
+  height: 766px;
+  left: 15%;
+  top: 20%;
+  background: linear-gradient(180deg, #BB6BD9 0%, rgba(196, 126, 222, 0.875) 27.08%, rgba(196, 126, 222, 0.875) 31.25%, rgba(255, 255, 255, 0) 94.79%), #E0279D;
+  background-blend-mode: hue, normal;
+  box-shadow: 50px 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.topicons {
+  display: flex;
+}
+.lock {
+  position: absolute;
+  left: 450px;
+  top: 37px;
+}
+.login-details {
+  width: 100%;
+}
+
+.rectangle1 {
+  left: 59px;
+  top: 302px;
+}
+.password {
+  top: 383px;
+}
+.rectangle2 {
+  left: 59px;
+  top: 383px;
+}
+.rectangle4 {
+  left: 59px;
+  top: 302px;
+}
+.email {
+  top: 302px;
+}
+.username::placeholder, .password::placeholder, .email::placeholder {
+  color: #ffffff;
+}
+.username, .password, .email {
+  left: 64px;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  z-index: 3;
+  background-color: transparent;
+  border: none;
+  padding-left: 20px;
+}
+.rectangle1, .rectangle2, .rectangle4, .username, .password, .email {
+  position: absolute;
+  width: 445px;
+  height: 52px;
+}
+.rectangle1, .rectangle2, .rectangle4 {
+  background: #C4C4C4;
+  mix-blend-mode: overlay;
+}
+
+.login-btn {
+  position: absolute;
+  width: 297px;
+  height: 95px;
+  left: 144px;
+  top: 516px;
+  border-radius: 50px;
+  box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.4);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #300037;
+}
+.rectangle3 {
+  position: absolute;
+  width: 296px;
+  height: 95px;
+  left: 145px;
+  top: 516px;
+  background: #FFFCFC;
+  mix-blend-mode: normal;
+  border-radius: 50px;
+}
+.login {
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  margin-top: 20px;
+}
+.log-btn {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  color: #300037;
+  letter-spacing: 0.02em;
+}
+.forgotpw, .signup, .have-acc {
+  position: absolute;
+  width: 394px;
+  height: 31px;
+  left: 96px;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.forgotpw {
+  top: 624px;
+}
+.signup {
+  top: 655px;
+}
+/* centering divs in login-details div */
+.rectangle1, .rectangle2, .rectangle3, .login-btn, .forgotpw, .signup, .have-acc {
+  display: inline-block;
+  margin: 0 auto;
+}
+a.login-link {
+  color: #FFFFFF;
+}
+a.login-link:hover {
+  color: #300037;
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+.have-acc {
+  top: 655px;
 }
