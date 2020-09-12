@@ -361,12 +361,15 @@ main#recording-space {
 }
 
 .search {
-  background-color: powderblue;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  background-color: #4B0D7A;
+  border-radius: 50px;
 }
 
 /* Style the search box inside the navigation bar */
 .search input[type=text] {
-  position: absolute;
   width: 800px;
   height: 40px;
   left: 425px;
@@ -376,9 +379,11 @@ main#recording-space {
 }
 
 .card {
-  background: #c7ecee;
+  background: #4B0D7A;
   height: 150px;
   width: 150px;
-
+  color: white;
 }
-
+.card-footer {
+  background: #4B0D7A;
+}
