@@ -1,6 +1,13 @@
-h1, h2 {
-  text-align: center;
-  margin-top: 5rem;
+h1 {
+  color: white;
+}
+h1 > a {
+  text-decoration: none;
+  color: white;
+}
+h1 > .fa {
+  font-size: 0.5em;
+  padding: 0.5%;
 }
 body {
   -moz-osx-font-smoothing: grayscale;
@@ -23,24 +30,44 @@ html {
 nav {
   background: transparent;
   height: 10vh;
-  margin: 0.5vh;
+  margin: 0.5vh 1vh;
 }
 #sidebar, #content {
   background: rgb(224,39,157);
   background: linear-gradient(180deg, rgba(224,39,157,1) 0%, rgba(187,107,217,1) 100%);
-  margin: 0.5vh;
+  margin: 0.5vh 1vh;
   height: 80vh;
   border-radius: 1em;
+}
+#sidebar {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.sidebar-button {
+  background-color: #00000059;
+  margin: 0.5em 0.8em;
+  border-radius: 1em;
+}
+.sidebar-button > .fa {
+  display: block;
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5vh 0;
 }
 main {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  max-height: 80vh;
+  min-height: 80vh;
 }
 #content {
   background: #33005A;
   
 }
+
+/**************** login and signup page ****************/
 .loginpage {
   width: 800px; /* define a width to the header container */
   position: relative; /* see note */
@@ -190,4 +217,93 @@ input:focus {
 }
 .have-acc {
   top: 655px;
+}
+/******************************* end of login/signup page *********************************/
+
+.home-date, .home-questions {
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+.home-add-title {
+  color: white;
+  padding: 0.5% 6%;
+}
+.home-form-container {
+  display: block;
+  width: 100%;
+  margin: 5%;
+  padding: 0.5% 6%;
+}
+.save-entry-btn {
+  border: 0;
+  background: rgb(224,39,157);
+  background: linear-gradient(180deg, rgba(224,39,157,1) 0%, rgba(187,107,217,1) 100%);
+
+
+}
+
+/* recording page styles below **********************************************/
+@keyframes bg-pulse {
+  0% {
+    background-color: #17a2b8;
+  }
+
+  50% {
+    background-color: #c7ecee;
+  }
+
+  100% {
+    backgrouond-color: #17a2b8;
+  }
+}
+
+.recording {
+  animation: bg-pulse 1s alternate ease-in-out infinite;
+}
+
+#result {
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  margin-right: 5rem;
+}
+#result .final {
+  color: #0d122b;
+  font-style: normal;
+}
+
+main#recording-space {
+  flex-grow: 2;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 2em;
+  padding-top: 4em;
+  text-align: center;
+  width: 50%;
+  height: 10rem;
+  margin: 0 auto;
+}
+
+#mic {
+  /* background: transparent; */
+  border-radius: 50%;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  margin-bottom: 4em;
+  width: 5rem;
+  height: 5rem;
+  font-size: 30px;
+}
+
+#mic:hover,
+#mic:focus {
+  background: #c7ecee;
+}
+
+.save-entry {
+  margin: 0 auto;
 }

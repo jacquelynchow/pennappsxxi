@@ -14,3 +14,7 @@ def login():
 @app.route('/signup', methods=["GET"])
 def signup():
     return render_template('signup.html')
+    
+@app.route('/record')
+def record():
+    return render_template('recordVoice.html')
