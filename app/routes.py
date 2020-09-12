@@ -27,3 +27,7 @@ def record():
 def saveData():
     entry_details = request.args.get('entry_details')
     return render_template('save.html', entry_details=entry_details)
+
+@app.route('/entries')
+def entries():
+    return render_template('entries.html')

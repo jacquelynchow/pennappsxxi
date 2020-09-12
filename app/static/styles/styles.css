@@ -351,3 +351,10 @@ main#recording-space {
   margin-bottom: 10rem;
   margin-left: 2rem;
 }
+
+.card {
+  background: #c7ecee;
+  height: 150px;
+  width: 150px;
+
+}
