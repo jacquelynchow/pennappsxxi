@@ -246,6 +246,11 @@ input:focus {
 }
 .home-add-title {
   margin-top: 10%;
+  margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  margin-left: 0px;
 }
 textarea.home-textarea {
   border-radius: 1em;
@@ -256,12 +261,15 @@ textarea.home-textarea {
 }
 button.save-btn {
   border: 0;
-  background: rgb(224,39,157);
-  background: linear-gradient(180deg, rgba(224,39,157,1) 0%, rgba(187,107,217,1) 100%);
-  border-radius: 1em;
+  background: linear-gradient(180deg, #BB6BD9 0%, rgba(196, 126, 222, 0.875) 27.08%, rgba(196, 126, 222, 0.875) 31.25%, rgba(255, 255, 255, 0) 94.79%), #E0279D;
+  background-blend-mode: hue, normal;
+  border-radius: 30px;
   padding: 0.5em 1em;
   margin-top: 1em;
   font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 div.save-btn-container {
   text-align: center;
@@ -350,4 +358,34 @@ main#recording-space {
   width: 5rem;
   margin-bottom: 10rem;
   margin-left: 2rem;
+}
+.search {
+  position: absolute;
+  top: 125px;
+  left: 300px;
+  background-color: #4B0D7A;
+  border-radius: 50px;
+}
+
+/* Style the search box inside the navigation bar */
+.search input[type=text] {
+  width: 600px;
+  height: 40px;
+  left: 425px;
+  top: 175px;
+  background: #FFFFFF;
+  border-radius: 50px;
+}
+
+.card {
+  top: 75px;
+  background-color: #4B0D7A;
+  height: 150px;
+  width: 150px;
+  color: white;
+  border-radius: 15px;
+}
+
+.card-footer {
+  background: #4B0D7A;
 }

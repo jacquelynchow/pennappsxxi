@@ -18,9 +18,9 @@
     <div class="sidebar-button"></div>
   </div>
   <div id="content" class="home">
-    <h2 class="home-date">Today is <strong>09/12/2020</strong></h2>
-    <p class="home-questions">Questions to think about: <span>What are you worried about?</span></p>
-    <h3 class="home-add-title">Add title here...</h3>
+    <h2 class="home-date">Today is <strong>{{ date }}</strong></h2>
+    <p class="home-questions">Questions to think about: <span class="questions"></span></p>
+    <input type="text" class="home-add-title" placeholder="Add title here..."></h3>
     <div class="home-form-container">
       <form rows="70" cols="100">
         <textarea class="home-textarea"></textarea>
@@ -33,4 +33,21 @@
     <div><i class="fa fa-microphone"></i></div>
   </div>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script type="text/javascript">
+  var typed = new Typed('.questions', {
+  strings: ["What are you worried about?", "How was Zoom University today?", 
+  "What's on your mind right now?",
+  "Did you taking time to care for yourself?",
+  "Things that made you happy today", 
+  "List five good things that happened today.", 
+  "Something you want to remember", 
+  "Did you taking time to care for yourself?"
+],
+  typeSpeed: 70,
+  loop: true,
+  backSpeed: 40, 
+  backDelay: 1500
+});
+</script>
 {% endblock %}

@@ -1,11 +1,12 @@
 from flask import Flask, render_template, url_for, request, redirect
 from app import app
+from datetime import date
 
 @app.route('/')
 @app.route('/index', methods=["GET"])
 def index():
-    user = {'username': 'Alice'}
-    return render_template('index.html', title='Home', user=user)
+    today = date.today()
+    return render_template('index.html', title='Home', date=today)
 
 @app.route('/login', methods=["GET"])
 def login():
