@@ -7,7 +7,15 @@ def index():
     user = {'username': 'Alice'}
     return render_template('index.html', title='Home', user=user)
 
-@app.route('/record', methods = ['GET', 'POST'])
+@app.route('/login', methods=["GET"])
+def login():
+    return render_template('login.html')
+
+@app.route('/signup', methods=["GET"])
+def signup():
+    return render_template('signup.html')
+
+@app.route('/record', methods=["GET", "POST"])
 def record():
     # if user submitted an entry, get it from the form and re-route to the entry page
     if request.method == 'POST':

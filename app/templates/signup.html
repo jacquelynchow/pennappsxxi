@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="loginpage">
+    <div class="loginblock">
+        <div class="topicons">
+            <div class="z">
+                <svg width="272" height="303" viewBox="0 0 272 303" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M194.266 82.44L217.386 54.6H195.226V47.08H228.906V53.64L205.946 81.48H229.306V89H194.266V82.44ZM120.607 154.08L137.947 133.2H121.327V127.56H146.587V132.48L129.367 153.36H146.887V159H120.607V154.08ZM78.1767 202.72L89.7367 188.8H78.6567V185.04H95.4967V188.32L84.0167 202.24H95.6967V206H78.1767V202.72Z" fill="white"/>
+                    <path d="M188.412 142.315L217.603 120.926L196.107 115.542L197.934 108.248L230.605 116.43L229.011 122.794L199.976 144.222L222.636 149.897L220.809 157.191L186.819 148.679L188.412 142.315ZM99.5559 193.914L121.449 177.872L105.327 173.834L106.697 168.363L131.2 174.5L130.005 179.273L108.228 195.343L125.223 199.6L123.853 205.071L98.3606 198.686L99.5559 193.914ZM46.5796 230.788L61.1751 220.093L50.4271 217.402L51.3405 213.754L67.676 217.845L66.8791 221.027L52.3613 231.741L63.6913 234.579L62.7778 238.226L45.7828 233.97L46.5796 230.788Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="lock">
+                <svg width="80" height="100" viewBox="0 0 92 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M69.3334 41V46H74.3334H80.0001C83.4034 46 86.3334 48.8674 86.3334 52.5V110C86.3334 113.633 83.4034 116.5 80.0001 116.5H12.0001C8.59674 116.5 5.66675 113.633 5.66675 110V52.5C5.66675 48.8674 8.59674 46 12.0001 46H17.6667H22.6667V41V29.5C22.6667 16.3224 33.1901 5.75 46.0001 5.75C58.8101 5.75 69.3334 16.3224 69.3334 29.5V41ZM63.5667 46H68.5667V41V29.5C68.5667 16.9751 58.5201 6.675 46.0001 6.675C33.4801 6.675 23.4334 16.9751 23.4334 29.5V41V46H28.4334H63.5667ZM29.6667 81.25C29.6667 90.2673 36.9368 97.75 46.0001 97.75C55.0634 97.75 62.3334 90.2673 62.3334 81.25C62.3334 72.2327 55.0634 64.75 46.0001 64.75C36.9368 64.75 29.6667 72.2327 29.6667 81.25Z" stroke="white" stroke-width="10"/>
+                    </svg>
+            </div>
+        </div>
+        <div class="login-details">
+            <input type="text" class="email" placeholder="EMAIL ADDRESS">
+            <div class="rectangle4"></div>
+
+            <input type="text" class="username" style="top: 376px;" placeholder="USERNAME">
+            <div class="rectangle1" style="top: 376px;"></div>
+
+            <input type="text" class="password" style="top: 457px;" placeholder="PASSWORD">
+            <div class="rectangle2" style="top: 457px;"></div>
+    
+            <div class="rectangle3" style="top: 548px;"></div>
+            <div class="login-btn" style="top: 548px;">
+                <div class="login"><input type="submit" value="SIGN UP" class="log-btn" style="top: 0px; left: 0px;"></button></div>
+            </div>
+    
+            <div class="have-acc">Have an account?&nbsp;<a href="{{ url_for('login') }}" class="login-link"><strong>Login Here</strong></a></div>
+        </div>
+    </div>
+  </div>
+{% endblock %}

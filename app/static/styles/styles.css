@@ -5,10 +5,6 @@ h1 > a {
   text-decoration: none;
   color: white;
 }
-h1 > .fa {
-  font-size: 0.5em;
-  padding: 0.5%;
-}
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +15,7 @@ body {
   line-height: 1.5;
   color: #525f7f;
   text-align: left;
-  background-color: #1e1e2f;
+  background-color: #300037;
 }
 html {
   font-family: sans-serif;
@@ -39,6 +35,8 @@ nav {
   height: 80vh;
   border-radius: 1em;
 }
+/*****************sidebar*****************/
+
 #sidebar {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -55,37 +53,218 @@ nav {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 5vh 0;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 main {
   display: grid;
   grid-template-columns: 1fr 4fr;
   min-height: 80vh;
+  width: 100%;
 }
 #content {
   background: #33005A;
+  
 }
-.home-date, .home-questions {
-  color: white;
+
+/**************** login and signup page ****************/
+.loginpage {
+  width: 800px; /* define a width to the header container */
+  position: relative; /* see note */
+  margin: 0 auto; /* centers header horizontally */
+}
+.loginblock {
+  position: absolute;
+  width: 570px;
+  height: 766px;
+  left: 15%;
+  top: 20%;
+  background: linear-gradient(180deg, #BB6BD9 0%, rgba(196, 126, 222, 0.875) 27.08%, rgba(196, 126, 222, 0.875) 31.25%, rgba(255, 255, 255, 0) 94.79%), #E0279D;
+  background-blend-mode: hue, normal;
+  box-shadow: 50px 40px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.topicons {
+  display: flex;
+}
+.lock {
+  position: absolute;
+  left: 450px;
+  top: 37px;
+}
+.login-details {
+  width: 100%;
+}
+
+.rectangle1 {
+  left: 59px;
+  top: 302px;
+}
+.password {
+  top: 383px;
+}
+.rectangle2 {
+  left: 59px;
+  top: 383px;
+}
+.rectangle4 {
+  left: 59px;
+  top: 302px;
+}
+.email {
+  top: 302px;
+}
+.username::placeholder, .password::placeholder, .email::placeholder {
+  color: #ffffff;
+}
+.username, .password, .email {
+  left: 64px;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  z-index: 3;
+  background-color: transparent;
+  border: none;
+  padding-left: 20px;
+}
+.rectangle1, .rectangle2, .rectangle4, .username, .password, .email {
+  position: absolute;
+  width: 445px;
+  height: 52px;
+}
+.rectangle1, .rectangle2, .rectangle4 {
+  background: #C4C4C4;
+  mix-blend-mode: overlay;
+}
+
+.login-btn {
+  position: absolute;
+  width: 297px;
+  height: 95px;
+  left: 144px;
+  top: 516px;
+  border-radius: 50px;
+  box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.4);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  align-items: center;
   text-align: center;
+  letter-spacing: 0.02em;
+  color: #300037;
+}
+.rectangle3 {
+  position: absolute;
+  width: 296px;
+  height: 95px;
+  left: 145px;
+  top: 516px;
+  background: #FFFCFC;
+  mix-blend-mode: normal;
+  border-radius: 50px;
+}
+.login {
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  margin-top: 20px;
+}
+.log-btn {
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  color: #300037;
+  letter-spacing: 0.02em;
+}
+.forgotpw, .signup, .have-acc {
+  position: absolute;
+  width: 394px;
+  height: 31px;
+  left: 96px;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.forgotpw {
+  top: 624px;
+}
+.signup {
+  top: 655px;
+}
+/* centering divs in login-details div */
+.rectangle1, .rectangle2, .rectangle3, .login-btn, .forgotpw, .signup, .have-acc {
+  display: inline-block;
+  margin: 0 auto;
+}
+a.login-link {
+  color: #FFFFFF;
+}
+a.login-link:hover {
+  color: #300037;
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+.have-acc {
+  top: 655px;
+}
+/******************************* homepage *********************************/
+
+.home {
+  color: white;
+}
+.home-date {
+  text-align: center;
+  padding: 3% 0% 1%;
+}
+.home-questions {
+  text-align: center;
+
   padding: 1%;
 }
-.home-add-title {
-  color: white;
-  padding: 0.5% 6%;
+.home-date, .home-add-title {
+  font-size: 3em;
 }
-.home-form-container {
+.home-questions {
+  font-size: 1.5em;
+}
+.home-add-title, .home-form-container {
   display: block;
-  width: 100%;
-  margin: 5%;
-  padding: 0.5% 6%;
+  margin: auto;
+  padding: 0 10%;
 }
-.save-entry-btn {
+.home-add-title {
+  margin-top: 10%;
+}
+textarea.home-textarea {
+  border-radius: 1em;
+  width: 100%;
+	height: 25vh;
+	border: 0;
+  padding: 1em;
+}
+button.save-btn {
   border: 0;
   background: rgb(224,39,157);
   background: linear-gradient(180deg, rgba(224,39,157,1) 0%, rgba(187,107,217,1) 100%);
-
-
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+div.save-btn-container {
+  text-align: center;
 }
 
 /* recording page styles below **********************************************/
