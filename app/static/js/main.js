@@ -18,6 +18,9 @@ window.addEventListener("DOMContentLoaded", () => {
       // add a class to change styles of btn recording stops
       mic = document.getElementById("mic");
       mic.classList.remove("recording");
+
+      // set the text area to have the recorded transcript
+      document.getElementById("entry-area").value += result.innerText
     };
 
     const start = () => {
@@ -45,7 +48,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // keeps listening until we press the btn again
     recognition.continuous = true;
-    // shows results as we speak 
+    // shows results as we speak
     recognition.interimResults = true;
     recognition.addEventListener("result", onResult);
     button.addEventListener("click", event => {
