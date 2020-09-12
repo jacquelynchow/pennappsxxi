@@ -1,13 +1,19 @@
 {% extends "layout.html" %}
 
 {% block heading %}
-
+  <header class="container-fluid">
+    <a href="{{ url_for('index') }}">
+      <h1>
+        Voice Diary App
+      </h1>
+    </a>
+  </header>
 {% endblock %}
 
 {% block body %}
   <div class="home">
     <h1>PennApps XXI Woohoo!!</h1>
-    <p>
+    <p class="landing-page">
       Makin' a voice diary app...
     </p>
   </div>
