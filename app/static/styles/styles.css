@@ -53,7 +53,7 @@ nav {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -5px 5px 4px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
-.sidebar-button > .fa {
+.sidebar-button > a {
   display: block;
   font-size: 5em;
   color: white;
@@ -395,6 +395,12 @@ main#recording-space {
   border-radius: 50px;
   padding-left: 15px;
 }
+#entriescontent {
+  width: 100%;
+}
+.row {
+  width: 100%;
+}
 
 .card {
   background-color: #4B0D7A;
@@ -410,7 +416,6 @@ main#recording-space {
 
 .card-footer {
   position: absolute;
-  background: #4B0D7A;
   text-align: right;
   font-size: 25px;
   font-weight: 600;
