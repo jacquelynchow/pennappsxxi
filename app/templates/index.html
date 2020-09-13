@@ -13,9 +13,9 @@
 {% block body %}
   <main>
   <div id="sidebar">
-    <div class="sidebar-button"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='record.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
-    <div class="sidebar-button"><a href="{{ url_for('entries') }}"><img src="{{ url_for('static', filename='entries.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
-    <div class="sidebar-button"><a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='logout.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
+    <div class="sidebar-button"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='record.png') }}"></a></div>
+    <div class="sidebar-button"><a href="{{ url_for('entries') }}"><img src="{{ url_for('static', filename='entries.png') }}"></a></div>
+    <div class="sidebar-button"><a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='logout.png') }}"></a></div>
   </div>
   <div id="content" class="home">
     <h2 class="home-date">Today is <strong>{{ date }}</strong></h2>
