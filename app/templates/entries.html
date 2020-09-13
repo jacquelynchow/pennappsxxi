@@ -7,10 +7,10 @@
 {% block body %}
   <main>
     <div id="sidebar">
-        <div class="sidebar-button"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='record.png') }}" ></a></div>
-        <div class="sidebar-button"><a href="{{ url_for('entries') }}"><img src="{{ url_for('static', filename='entries.png') }}"></a></div>
-        <div class="sidebar-button"><a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='logout.png') }}"></a></div>
-  </div>
+        <div class="sidebar-button"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='record.png') }}" style="height: 90px; margin: 55px; margin-top: 45px;"></a></div>
+        <div class="sidebar-button"><a href="{{ url_for('entries') }}"><img src="{{ url_for('static', filename='entries.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
+        <div class="sidebar-button"><a href="{{ url_for('login') }}"><img src="{{ url_for('static', filename='logout.png') }}" style="height: 90px; margin-left: 55px; margin-top: 45px;"></a></div>
+    </div>
     <div id="entriescontent">
 
         <div class="search">
@@ -19,23 +19,27 @@
 
         <div class="row">
         <div class="card-deck">
-            <div class="card text-center">
-                <div class="bookmark">
-                    <svg width="30" height="55" viewBox="0 0 30 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0V55L15 38.2422L30 55V0H0Z" fill="white"/>
-                    </svg> 
-                </div>
-                <div class="card-block">
-                    <h4 class="card-title">2020-09-11</h4>
-                    <p class="card-text">
-                      Dear voice diary today I had a bad day because my professor wasn’t very nice to me...
-                    </p>
-                </div>
-                <div class="card-footer">
-                    Mean Professor
-                </div>
-            </div>
-    
+            <form method="POST">
+                <button type="submit" style="border: none; outline:none; background-color: transparent;">
+                    <div class="card text-center">
+                        <div class="bookmark">
+                            <svg width="30" height="55" viewBox="0 0 30 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V55L15 38.2422L30 55V0H0Z" fill="white"/>
+                            </svg> 
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">2020-09-12</h4>
+                            <p class="card-text">
+                                Dear NiteWrite today I had a great time hacking with my team at PennApps!
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            Just Hackathon Things
+                        </div>
+                    </div>
+                </button>
+            </form>
+            
             <div class="card text-center">
                 <div class="bookmark">
                     <svg width="30" height="55" viewBox="0 0 30 55" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,23 +74,28 @@
                 </div>
             </div>
         </div>
+        
         <div class="card-deck mt-4">
-            <div class="card text-center">
-                <div class="bookmark">
-                    <svg width="30" height="55" viewBox="0 0 30 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0V55L15 38.2422L30 55V0H0Z" fill="white"/>
-                    </svg> 
-                </div>
-                <div class="card-block">
-                    <h4 class="card-title">2020-09-07</h4>
-                    <p class="card-text">
-                      At my school the number of cases is continuing to grow every day...
-                    </p>
-                </div>
-                <div class="card-footer">
-                    COVID-19 Kids
-                </div>
-            </div>
+            <form method="POST">
+                <button type="submit" style="border: none; outline:none; background-color: transparent;">
+                    <div class="card text-center">
+                        <div class="bookmark">
+                            <svg width="30" height="55" viewBox="0 0 30 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V55L15 38.2422L30 55V0H0Z" fill="white"/>
+                            </svg> 
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">2020-09-07</h4>
+                            <p class="card-text">
+                            At my school the number of cases is continuing to grow every day...
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            COVID-19 Kids
+                        </div>
+                    </div>
+                </button>
+            </form>
     
             <div class="card text-center">
                 <div class="bookmark">
@@ -122,22 +131,26 @@
             </div>
         </div>
         <div class="card-deck mt-4">
-            <div class="card text-center">
-                <div class="bookmark">
-                    <svg width="30" height="55" viewBox="0 0 30 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0V55L15 38.2422L30 55V0H0Z" fill="white"/>
-                    </svg> 
-                </div>
-                <div class="card-block">
-                    <h4 class="card-title">2020-08-30</h4>
-                    <p class="card-text">
-                      Dear diary I am actually obsessed with Tik Tok...
-                    </p>
-                </div>
-                <div class="card-footer">
-                  TikTok Love
-                </div>
-            </div>
+            <form method="POST">
+                <button type="submit" style="border: none; outline:none; background-color: transparent;">
+                    <div class="card text-center">
+                        <div class="bookmark">
+                            <svg width="30" height="55" viewBox="0 0 30 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V55L15 38.2422L30 55V0H0Z" fill="white"/>
+                            </svg> 
+                        </div>
+                        <div class="card-block">
+                            <h4 class="card-title">2020-08-30</h4>
+                            <p class="card-text">
+                            Dear diary I am actually obsessed with Tik Tok...
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                        TikTok Love
+                        </div>
+                    </div>
+                </button>
+            </form>
     
             <div class="card text-center">
                 <div class="bookmark">
@@ -234,7 +247,7 @@
                 <div class="card-block">
                     <h4 class="card-title">2020-08-20</h4>
                     <p class="card-text">
-                      Dear diary so I am kind of forced to help organize our schools hackathon...
+                      Dear diary, I'm participating in PennApps Hackathon.
                     </p>
                 </div>
                 <div class="card-footer">

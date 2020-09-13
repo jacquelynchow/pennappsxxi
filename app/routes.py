@@ -26,7 +26,6 @@ def signup():
 def record():
     # if user submitted an entry, get it from the form and re-route to the entry page
     if request.method == 'POST':
-        entry_details = request.form.get('entry')
         return redirect(url_for('saveData', entry_details=entry_details))
     return render_template("recordVoice.html")
 
@@ -36,13 +35,16 @@ def saveData():
     entry_details = request.args.get('entry_details')
     return render_template('save.html', entry_details=entry_details, entry_title=entry_title)
 
-@app.route('/entries')
+@app.route('/entries', methods=["GET", "POST"])
 def entries():
+    # if user submitted an entry, get it from the form and re-route to the entry page
+    if request.method == 'POST':
+        return redirect(url_for('entry'))
     return render_template('entries.html')
 
-@app.route('/entry')
+@app.route('/entry', methods=["GET", "POST"])
 def entry():
-    title = "This is my title"
-    date = "09/12/2020"
-    entry_details = "Here is my example entry."
+    title = "Just Hackathon Things"
+    date = "2020-09-12"
+    entry_details = "Dear NiteWrite today I had a great time hacking with my team at PennApps!"
     return render_template('singleEntry.html', title=title, date=date, entry_details=entry_details)

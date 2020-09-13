@@ -34,7 +34,7 @@ nav {
 #sidebar, #content {
   background: rgb(224,39,157);
   background: linear-gradient(180deg, rgba(224,39,157,1) 0%, rgba(187,107,217,1) 100%);
-  margin: 0.5vh 1vh;
+  margin: 0 1vh;
   border-radius: 1em;
   height: 80vh;
 }
@@ -45,6 +45,8 @@ nav {
   grid-template-rows: 1fr 1fr 1fr;
   min-width: 220px;
   max-width: 220px;
+  margin-left: 30px;
+  margin-right: 20px;
 }
 .sidebar-button {
   background-color: #00000059;
@@ -57,7 +59,7 @@ nav {
   min-width: 200px;
   max-width: 200px;
 }
-.sidebar-button > a {
+.sidebar-button > .fa {
   display: block;
   font-size: 5em;
   color: white;
@@ -76,7 +78,7 @@ main {
 }
 #content {
   background: #33005A;
-  
+  margin-right: 0px;
 }
 
 /**************** login and signup page ****************/
@@ -260,17 +262,18 @@ input:focus {
   border: none;
   background-color: transparent;
   color: white;
-  margin-left: -70px;
+  margin-left: -30px;
   padding-right: 70px;
   margin-bottom: 0px
 }
 textarea.home-textarea {
   border-radius: 1em;
   width: 90%;
-	height: 25vh;
+	height: 15vh;
 	border: 0;
   padding: 1em;
   margin-left: 5%;
+  font-family: 'Raleway';
 }
 button.save-btn {
   border: 0;
@@ -344,13 +347,6 @@ main#recording-space {
 .bottom > div {
   display: inline-block;
 }
-.record-button {
-  position: absolute;
-  float: right;
-  left: 200;
-  margin-top: 0px;
-  margin-left: 30px;
-}
 #mic:hover,
 #mic:focus {
   background: #c7ecee;
@@ -373,19 +369,19 @@ main#recording-space {
 }
 
 
-/*------------- entries page styles -------------*/
+/* entries page styles */
 #entriescontent {
   background: #300037;
-  margin: 7vh 1vh;
-  height: 73vh;
+  margin: 10vh 1vh;
+  height: 70vh;
   border-radius: 1em;
   overflow: auto;
 }
 
 .search {
   position: absolute;
-  top: 110px;
-  left: 400px;
+  top: 125px;
+  left: 280px;
   border-radius: 50px;
 }
 
@@ -399,27 +395,21 @@ main#recording-space {
   border-radius: 50px;
   padding-left: 15px;
 }
-#entriescontent {
-  width: 100%;
-}
-.row {
-  width: 100%;
-}
 
 .card {
   background-color: #4B0D7A;
   height: 200px;
-  width: 320px;
+  width: 300px;
   color: white;
   border-radius: 15px;
-  left: 60px;
+  left: 30px;
   padding-left: 30px;
   padding-bottom: 15px;
-  margin-right: 40px;
 }
 
 .card-footer {
   position: absolute;
+  background: #4B0D7A;
   text-align: right;
   font-size: 25px;
   font-weight: 600;
@@ -437,7 +427,6 @@ main#recording-space {
 .card-text {
   text-align: left;
   padding-left: 5px;
-  overflow: auto;
 }
 
 .bookmark {
