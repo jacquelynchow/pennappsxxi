@@ -10,8 +10,7 @@ def index():
     if request.method == 'POST':
         entry_details = request.form.get('entry')
         entry_title = request.form.get('entry-title')
-        print(entry_title)
-        return redirect(url_for('saveData', entry_details=entry_details, entry_title=entry_title))
+        return redirect(url_for('entry'))
     return render_template('index.html', date=today)
 
 @app.route('/login', methods=["GET"])
@@ -45,6 +44,6 @@ def entries():
 @app.route('/entry', methods=["GET", "POST"])
 def entry():
     title = "Just Hackathon Things"
-    date = "2020-09-12"
-    entry_details = "Dear NiteWrite today I had a great time hacking with my team at PennApps!"
+    date = "2020-09-13"
+    entry_details = "Dear diary today I had a great time hacking with my team at a hackathon"
     return render_template('singleEntry.html', title=title, date=date, entry_details=entry_details)
