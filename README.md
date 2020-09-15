@@ -1,5 +1,5 @@
 # Nite :notebook_with_decorative_cover: Write
-A speech-to-text diary to get those end-of-the-day thoughts out. A right night is a night with NiteWrite!
+A speech-to-text journal to get those end-of-the-day thoughts out. A right night is a night with NiteWrite!
 
 ## Inspiration
 **A lot of people have stressful things on their mind right now.** [According to a Boston University study, "depression symptom prevalence was more than 3-fold higher during the COVID-19 pandemic than before."](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2770146)
